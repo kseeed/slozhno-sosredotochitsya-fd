@@ -8,6 +8,8 @@
   --main-font-family: 'IBM Plex Mono', sans-serif;
   --main-font-size: 18px;
   --main-font-weight: 400;
+  --font-weight-bold: 700;
   --main-line-height: 130%;
   --accent-color: #FF0070;
+  --heading-text-color: #000028;
 }

@@ -2,4 +2,80 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: var(--bg-color);
+  background-size: cover;
+  object-fit: cover;
+}
+
+.header {
+  block-size: 100vh;
+  min-block-size: 668px;
+  display: grid;
+  position: relative;
+}
+
+.decorative_text {
+  position: absolute;
+  right: 38px;
+  top: 10px;
+  color: #FF0070;
+  font-family: var(--main-font-family, sans-serif);
+  font-size: var(--main-font-size);
+  font-weight: var(--main-font-weight);
+  line-height: 139%;
+  text-transform: uppercase;
+}
+
+.decorative_text::after {
+  content: "";
+  inline-size: 9px;
+  block-size: 9px;
+  background-color: #FF0070;
+  box-shadow: 0 0 4px 2px #FF0070;
+  border-radius: 50%;
+  position: absolute;
+  right: -19px;
+  top: 8px;
+}
+
+.decorated-zone::before {
+  content: "";
+  border-top: 1px solid #FF0070;
+  border-right: 1px solid #FF0070;
+  top: 10px;
+  right: 10px;
+  inline-size: 25px;
+  block-size: 25px;
+  position: absolute;
+}
+
+.decorated-zone::after {
+  content: "";
+  border-left: 1px solid #FF0070;
+  border-bottom: 1px solid #FF0070;
+  left: 10px;
+  bottom: 10px;
+  inline-size: 25px;
+  block-size: 25px;
+  position: absolute;
+}
+
+.header__theme-menu {}
+
+.header__theme-menu-list {}
+
+.header__theme-menu-item {}
+
+.header__title {
+  color: #DB00FF;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-family: var(--main-font-family, sans-serif);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 83%;
+  text-transform: lowercase;
 }

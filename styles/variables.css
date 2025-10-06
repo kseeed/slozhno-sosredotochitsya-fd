@@ -13,3 +13,7 @@
   --accent-color: #FF0070;
   --heading-text-color: #000028;
 }
+
+.theme-light .decorative_text {
+  display: none;
+}

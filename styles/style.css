@@ -260,13 +260,6 @@
   gap: 20px;
 }
 
-/* @media (width >= 1024px) {
- .text-blocks {
-  grid-template-columns: repeat(3, 1fr);
- }
-}
-*/
-
 .text-block {
   display: grid;
   gap: 10px;
@@ -280,6 +273,25 @@
 
 .text-block__text {
   color: var(--main-text-color);
+}
+
+.link {
+  text-shadow: 2px 1px var(--accent-color);
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+
+.link:focus {
+  border: 1px solid var(--main-text-color);
+}
+
+.link:focus-visible {
+  border: 1px solid var(--main-text-color);
+  outline: none;
+}
+
+.link:hover {
+  border-bottom: 1px solid var(--main-text-color);
 }
 
 .text-block__subtitle {

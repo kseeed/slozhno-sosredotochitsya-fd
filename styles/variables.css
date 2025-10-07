@@ -6,12 +6,13 @@
   --bg-image: url("../images/cover-image-dark.png");
   --bg-color: #000028;
   --main-font-family: 'IBM Plex Mono', sans-serif;
+  --main-text-color: #F1B2CE;
   --main-font-size: 18px;
   --main-font-weight: 400;
   --font-weight-bold: 700;
   --main-line-height: 130%;
   --accent-color: #FF0070;
-  --heading-text-color: #000028;
+  --header-text-color: #DB00FF;
 }
 
 .theme-light .decorative_text {

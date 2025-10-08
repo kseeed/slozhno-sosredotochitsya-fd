@@ -11,12 +11,7 @@
   */
   --bg-image: url("../images/cover-image-light.png");
   --bg-color: #FFF1F7;
-  --main-font-family: 'IBM Plex Mono', monospace;
   --main-text-color: #353430;
-  --main-font-size: 18px;
-  --main-font-weight: 400;
-  --font-weight-bold: 700;
-  --main-line-height: 130%;
   --accent-color: #FF8DCB;
   --decoration-color: #353430;
   --heading-color: #FFC2E6;
@@ -27,4 +22,18 @@
 
 .theme-light .decorative_text {
   display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-image: url("../images/cover-image-light.png");
+    --bg-color: #FFF1F7;
+    --main-text-color: #353430;
+    --accent-color: #FF8DCB;
+    --decoration-color: #353430;
+    --heading-color: #FFC2E6;
+    --text-heading-color: #353430;
+    --nav-color: #353430;
+    --nav-hover-color: rgba(50, 49, 45, 0.40);
+  }
 }
